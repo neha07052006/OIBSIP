@@ -13,7 +13,7 @@ public class DBConnection {
     private static final String USER = "root";
 
     
-    private static final String PASSWORD = "Neha@756";
+   String password = System.getenv("DB_PASSWORD");
 
     public static Connection getConnection()
             throws SQLException {
